@@ -83,6 +83,7 @@ def plot_class_tabs(
         tabs_order=tabs_order)
 
     _display_html(html)
+    return html
 
 
 def plot_images(
@@ -152,6 +153,7 @@ def plot_images(
         force_b64=force_b64)
 
     _display_html(html)
+    return html
 
 
 def plot_class_representations(
@@ -213,7 +215,7 @@ def plot_class_representations(
     images, labels = _get_class_representations(
         images, labels, ignore_labels, labels_order)
 
-    plot_images(
+    return plot_images(
         images=images,
         labels=labels,
         max_images=len(images),
